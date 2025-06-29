@@ -1,21 +1,21 @@
 export const ShortStatusMessages = {
   // --- 1xx: Informational ---
-  // 100: 'Continue',
-  // 101: 'Switching Protocols',
-  // 102: 'Processing',
-  // 103: 'Early Hints',
+  100: 'Continue',
+  101: 'Switching Protocols',
+  102: 'Processing',
+  103: 'Early Hints',
 
-  // // --- 2xx: Success ---
-  // 200: 'OK',
-  // 201: 'Created',
-  // 202: 'Accepted',
-  // 203: 'Non-Authoritative Information',
-  // 204: 'No Content',
-  // 205: 'Reset Content',
-  // 206: 'Partial Content',
-  // 207: 'Multi Status',
-  // 208: 'Already Reported',
-  // 226: 'IM Used',
+  // --- 2xx: Success ---
+  200: 'OK',
+  201: 'Created',
+  202: 'Accepted',
+  203: 'Non-Authoritative Information',
+  204: 'No Content',
+  205: 'Reset Content',
+  206: 'Partial Content',
+  207: 'Multi Status',
+  208: 'Already Reported',
+  226: 'IM Used',
 
   // --- 3xx: Redirection ---
   300: 'Multiple Choices',
@@ -55,6 +55,7 @@ export const ShortStatusMessages = {
   426: 'Upgrade Required',
   428: 'Precondition Required',
   429: 'Too Many Requests',
+  431: 'Request Header Fields Too Large',
   451: 'Unavailable For Legal Reasons',
 
   // --- 5xx: Server Errors ---
