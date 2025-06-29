@@ -1,16 +1,34 @@
 {
   "name": "http-status-toolkit",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./src/index.js",
+  "exports": {
+  ".": {
+    "import": "./dist/statusCodes.js"
+  },
+  "./short": {
+    "import": "./dist/messages/short.js"
+  },
+  "./medium": {
+    "import": "./dist/messages/medium.js"
+  },
+  "./long": {
+    "import": "./dist/messages/long.js"
+  },
+  "./get-message": {
+    "import": "./dist/getMessage.js"
+  }
+},
+
   "scripts": {
      "build": "tsc",
      "start": "node dist/index.js",
      "dev": "ts-node src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["http", "status-codes", "http-status", "node", "express"],
+  "author": "Rashedin Islam",
+  "license": "MIT",
   "description": "",
   "dependencies": {
     "express": "^5.1.0"
