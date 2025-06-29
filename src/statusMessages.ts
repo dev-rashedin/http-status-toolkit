@@ -1,17 +1,41 @@
 export const StatusMessages = {
-  100: 'Continue',
-  101: 'Switching Protocols',
-  102: 'Processing',
-  103: 'Early Hints',
-  200: 'OK',
-  201: 'Created',
-  202: 'Accepted',
-  203: 'Non-Authoritative Information',
-  204: 'No Content',
-  205: 'Reset Content',
-  206: 'Partial Content',
-  207: 'Multi Status',
-  208: 'Already Reported',
+  // --- 1xx: Informational ---
+  // 100: 'Continue',
+  // 101: 'Switching Protocols',
+  // 102: 'Processing',
+  // 103: 'Early Hints',
+
+  // // --- 2xx: Success ---
+  // 200: 'OK',
+  // 201: 'Created',
+  // 202: 'Accepted',
+  // 203: 'Non-Authoritative Information',
+  // 204: 'No Content',
+  // 205: 'Reset Content',
+  // 206: 'Partial Content',
+  // 207: 'Multi Status',
+  // 208: 'Already Reported',
+  // 226: 'IM Used',
+
+  // --- 1xx: Informational ---
+  100: 'Request received, continue to send the rest of the request.',
+  101: 'Protocol switch initiated as requested by the client.',
+  102: 'Request accepted, processing is ongoing.',
+  103: 'Preliminary headers sent before the final response.',
+
+  // --- 2xx: Success ---
+  200: 'The request was successful.',
+  201: 'The resource was created successfully.',
+  202: 'The request has been accepted but not yet processed.',
+  203: 'Returned metadata may be from a local or third-party copy.',
+  204: 'The request was successful but there is no content to send.',
+  205: 'The client should reset the document view.',
+  206: 'The server is returning part of the resource due to a range header.',
+  207: 'Multiple statuses for different parts of a WebDAV request.',
+  208: 'The members of a DAV binding have already been reported.',
+  226: 'The server has fulfilled a GET request using instance manipulation.',
+
+  // --- 3xx: Redirection ---
   300: 'Multiple Choices',
   301: 'Moved Permanently',
   302: 'Moved Temporarily',
@@ -20,6 +44,8 @@ export const StatusMessages = {
   305: 'Use Proxy',
   307: 'Temporary Redirect',
   308: 'Permanent Redirect',
+
+  // --- 4xx: Client Errors ---
   400: 'Bad Request',
   401: 'Unauthorized',
   402: 'Payment Required',
@@ -48,6 +74,8 @@ export const StatusMessages = {
   428: 'Precondition Required',
   429: 'Too Many Requests',
   451: 'Unavailable For Legal Reasons',
+
+  // --- 5xx: Server Errors ---
   500: 'Internal Server Error',
   501: 'Not Implemented',
   502: 'Bad Gateway',
