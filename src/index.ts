@@ -1,6 +1,11 @@
-import { StatusCodes } from './status-codes';
+
+import { StatusCodes } from './statusCodes';
+import { StatusMessages } from './statusMessages';
+import { getStatusMessage } from './getStatusMessage';
 
 
 export {
-  StatusCodes
+  StatusCodes,
+  StatusMessages,
+  getStatusMessage
 }
