@@ -2,30 +2,36 @@
   "name": "http-status-toolkit",
   "version": "1.0.0",
   "main": "./src/index.js",
- "exports": {
-  ".": {
-    "import": "./dist/statusCodes.js"
+  "exports": {
+    ".": {
+      "import": "./dist/statusCodes.js"
+    },
+    "./messages": {
+      "import": "./dist/StatusMessages.js"
+    },
+    "./messages-long": {
+      "import": "./dist/LongStatusMessages.js"
+    },
+    "./get-message": {
+      "import": "./dist/getStatusMessage.js"
+    },
+    "./types": {
+      "import": "./dist/types.js"
+    }
   },
-  "./messages": {
-    "import": "./dist/StatusMessages.js"
-  },
-  "./messages-long": {
-    "import": "./dist/LongStatusMessages.js"
-  },
-  "./get-message": {
-    "import": "./dist/getStatusMessage.js"
-  },
-  "./types": {
-  "import": "./dist/types.js"
-}
-},
   "scripts": {
-     "build": "tsc",
-     "start": "node dist/index.js",
-     "dev": "ts-node src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["http", "status-codes", "http-status", "node", "express"],
+  "keywords": [
+    "http",
+    "status-codes",
+    "http-status",
+    "node",
+    "express"
+  ],
   "author": "Rashedin Islam",
   "license": "MIT",
   "description": "",
@@ -33,6 +39,7 @@
     "express": "^5.1.0"
   },
   "devDependencies": {
+    "tsup": "^8.5.0",
     "typescript": "^5.8.3"
   }
 }
