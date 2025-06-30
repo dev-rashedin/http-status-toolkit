@@ -1,7 +1,7 @@
 
 // generate status message is required
 
-const StatusMessages = {
+export const StatusMessages = {
   // --- 1xx: Informational ---
   100: 'Continue',
   101: 'Switching Protocols',
@@ -104,8 +104,6 @@ const StatusMessages = {
   527: 'Railgun Error',
 } as const;
 
-
-export default StatusMessages;
 
 export type StatusMessage =
   (typeof StatusMessages)[keyof typeof StatusMessages];

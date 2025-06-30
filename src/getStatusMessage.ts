@@ -1,8 +1,8 @@
 // import shortMessages from './shortStatusMessages';
 
-import LongStatusMessages from './longStatusMessages';
+import {LongStatusMessages} from './longStatusMessages';
 import type { StatusCode } from './statusCodes';
-import StatusMessages from './statusMessage';
+import {StatusMessages} from './statusMessage';
 
 
 export function getStatusMessage(
