@@ -1,5 +1,4 @@
 // import shortMessages from './shortStatusMessages';
-
 import {LongStatusMessages} from './longStatusMessages';
 import type { StatusCode } from './statusCodes';
 import {StatusMessages} from './statusMessage';

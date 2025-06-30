@@ -36,7 +36,8 @@
     "build": "tsup",
     "start": "node dist/index.js",
     "dev": "ts-node src/index.ts",
-    "test": "jest"
+    "test": "jest",
+    "check": "npm run build && npm run test"
   },
   "keywords": [
     "http",

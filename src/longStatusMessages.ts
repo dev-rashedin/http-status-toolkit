@@ -62,17 +62,17 @@ export const LongStatusMessages = {
   451: 'Access to the resource is denied for legal reasons.',
 
   // --- 5xx: Server Errors ---
-  500: 'Internal Server Error',
-  501: 'Not Implemented',
-  502: 'Bad Gateway',
-  503: 'Service Unavailable',
-  504: 'Gateway Timeout',
-  505: 'HTTP Version Not Supported',
-  506: 'Variant Also Negotiates',
-  507: 'Insufficient Storage',
-  508: 'Loop Detected',
-  510: 'Not Extended',
-  511: 'Network Authentication Required',
+  500: 'The server encountered an unexpected internal error.',
+  501: 'The server does not support the requested feature.',
+  502: 'Received an invalid response from the upstream server.',
+  503: 'The server is currently unavailable or overloaded.',
+  504: 'The gateway timed out while waiting for a response.',
+  505: 'The HTTP version used is not supported by the server.',
+  506: 'Content negotiation failed due to a server issue.',
+  507: 'The server is unable to store the representation needed.',
+  508: 'The server detected an infinite loop while processing.',
+  510: 'Further extensions are required to complete the request.',
+  511: 'Network authentication is required to access this resource.',
 
   // Unofficial
   419: 'Page expired due to missing or invalid CSRF token.',
