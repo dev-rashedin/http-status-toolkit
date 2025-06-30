@@ -1,10 +1,13 @@
 // import shortMessages from './shortStatusMessages';
-import { LongStatusMessages } from './detailedStatusMessages';
 import type { StatusCode } from './statusCodes';
 import { StatusMessages } from './statusMessages';
+import { DetailedStatusMessages } from './detailedStatusMessages';
 
-export function getStatusMessage(statusCode: StatusCode, long = false): string {
-  return long
-    ? LongStatusMessages[statusCode] ?? 'Unknown Status'
+export function getStatusMessage(
+  statusCode: StatusCode,
+  detailed = false
+): string {
+  return detailed
+    ? DetailedStatusMessages[statusCode] ?? 'Unknown Status'
     : StatusMessages[statusCode] ?? 'Unknown Status';
 }

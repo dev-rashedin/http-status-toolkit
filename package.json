@@ -21,7 +21,7 @@
       "require": "./dist/statusMessages.cjs",
       "types": "./dist/statusMessages.d.ts"
     },
-    "./messages-long": {
+    "./messages-detailed": {
       "import": "./dist/detailedStatusMessages.js",
       "require": "./dist/detailedStatusMessages.cjs",
       "types": "./dist/detailedStatusMessages.d.ts"

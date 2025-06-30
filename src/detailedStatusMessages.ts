@@ -1,5 +1,5 @@
 
-// generate long status message if required
+// generate detailed status message if required
 
 export const DetailedStatusMessages = {
   // --- 1xx: Informational ---

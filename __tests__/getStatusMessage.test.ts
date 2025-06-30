@@ -10,22 +10,25 @@ describe('getStatusMessage', () => {
     expect(getStatusMessage(StatusCodes.INSUFFICIENT_STORAGE)).toBe(
       'Insufficient Storage'
     );
-    expect(getStatusMessage(StatusCodes.MOVED_PERMANENTLY)).toBe('Moved Permanently');
-    expect(getStatusMessage(StatusCodes.PERMANENT_REDIRECT)).toBe('Permanent Redirect');
+    expect(getStatusMessage(StatusCodes.MOVED_PERMANENTLY)).toBe(
+      'Moved Permanently'
+    );
+    expect(getStatusMessage(StatusCodes.PERMANENT_REDIRECT)).toBe(
+      'Permanent Redirect'
+    );
   });
 
-
-  // check if it returns a long message
-  it('should return a long message if long = true', () => {
+  // check if it returns a detailed message
+  it('should return a detailed message if detailed = true', () => {
     expect(getStatusMessage(StatusCodes.OK, true)).toMatch(/successful/i);
     expect(getStatusMessage(StatusCodes.CREATED, true)).toMatch(
-      /successfully/i
+      /has been created/i
     );
     expect(getStatusMessage(StatusCodes.NOT_FOUND, true)).toMatch(
-      /cannot find/i
+      /cannot locate/i
     );
     expect(getStatusMessage(StatusCodes.INSUFFICIENT_STORAGE, true)).toMatch(
-      /unable to store/i
+      /cannot store/i
     );
     expect(getStatusMessage(StatusCodes.MOVED_PERMANENTLY, true)).toMatch(
       /permanently moved /i
@@ -34,7 +37,6 @@ describe('getStatusMessage', () => {
       /permanent redirect/i
     );
   });
-
 
   // check if it returns a "Unknown Status" for invalid code
   it('should return a "Unknown Status" for invalid code', () => {
