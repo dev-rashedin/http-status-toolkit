@@ -73,7 +73,34 @@ const LongStatusMessages = {
   508: 'Loop Detected',
   510: 'Not Extended',
   511: 'Network Authentication Required',
-  599: 'Network Connect Timeout Error',
+
+  // Unofficial
+  419: 'Page expired due to missing or invalid CSRF token.',
+  420: 'Request rate limited; please slow down.',
+  450: 'Access blocked by Windows parental control settings.',
+  498: 'Token provided is invalid or expired.',
+  509: 'Bandwidth limit exceeded as per server settings.',
+  530: 'Site is frozen due to inactivity or administrative action.',
+  598: 'Network read timed out behind a proxy server.',
+  599: 'Network connection timed out during communication.',
+
+  // NGINX
+  444: 'No response returned; connection closed immediately.',
+  494: 'Request header is too large to be processed by the server.',
+  495: 'Invalid client SSL certificate provided.',
+  496: 'Client SSL certificate required but not provided.',
+  497: 'HTTP request sent to an HTTPS port by mistake.',
+  499: 'Client closed the request before server responded.',
+
+  // Cloudflare
+  520: 'Unknown error from origin server; connection reset or invalid response.',
+  521: 'Origin server refused connection from Cloudflare.',
+  522: 'TCP handshake timed out between Cloudflare and origin server.',
+  523: 'Cloudflare could not reach the origin server.',
+  524: 'Timeout occurred waiting for response from origin server.',
+  525: 'SSL/TLS handshake failed between Cloudflare and origin server.',
+  526: 'Origin server presented an invalid SSL certificate.',
+  527: 'Request timed out or failed after WAN connection was established.',
 } as const;
 
 

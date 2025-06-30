@@ -50,11 +50,11 @@ const StatusMessages = {
   416: 'Range Not Satisfiable',
   417: 'Expectation Failed',
   418: "I'm a teapot",
-  419: 'Insufficient Space on Resource',
-  420: 'Method Failure',
   421: 'Misdirected Request',
   422: 'Unprocessable Entity',
+  423: 'Locked',
   424: 'Failed Dependency',
+  425: 'Too Early',
   426: 'Upgrade Required',
   428: 'Precondition Required',
   429: 'Too Many Requests',
@@ -73,7 +73,35 @@ const StatusMessages = {
   508: 'Loop Detected',
   510: 'Not Extended',
   511: 'Network Authentication Required',
+
+  // Unofficial
+  419: 'Page Expired',
+  420: 'Enhance Your Calm',
+  450: 'Blocked by Windows Parental Controls',
+  498: 'Invalid Token',
+  509: 'Bandwidth Limit Exceeded',
+  530: 'Site is Frozen',
+  598: 'Network Read Timeout Error',
   599: 'Network Connect Timeout Error',
+
+
+  // NGINX
+  444: 'No Response',
+  494: 'Request Header Too Large',
+  495: 'SSL Certificate Error',
+  496: 'SSL Certificate Required',
+  497: 'HTTP Request Sent to HTTPS Port',
+  499: 'Client Closed Request',
+
+  // Cloudflare
+  520: 'Unknown Error',
+  521: 'Web Server Is Down',
+  522: 'Connection Timed Out',
+  523: 'Origin Is Unreachable',
+  524: 'A Timeout Occurred',
+  525: 'SSL Handshake Failed',
+  526: 'Invalid SSL Certificate',
+  527: 'Railgun Error',
 } as const;
 
 

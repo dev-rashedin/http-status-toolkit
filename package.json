@@ -2,21 +2,20 @@
   "name": "http-status-toolkit",
   "version": "1.0.0",
   "main": "./src/index.js",
-  "exports": {
+ "exports": {
   ".": {
     "import": "./dist/statusCodes.js"
   },
-  "./short": {
-    "import": "./dist/short.js"
+  "./messages": {
+    "import": "./dist/StatusMessages.js"
   },
-  "./long": {
-    "import": "./dist/long.js"
+  "./messages-long": {
+    "import": "./dist/LongStatusMessages.js"
   },
   "./get-message": {
-    "import": "./dist/getMessage.js"
+    "import": "./dist/getStatusMessage.js"
   }
 },
-
   "scripts": {
      "build": "tsc",
      "start": "node dist/index.js",
