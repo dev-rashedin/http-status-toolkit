@@ -48,7 +48,7 @@
     "typescript",
     "rest-api"
   ],
-  "author": "Rashedin Islam",
+  "author": "Rashedin Islam <rashedinislam.06@gmail.com>",
   "license": "MIT",
   "description": "A lightweight and developer-friendly toolkit for working with HTTP status codes and messages in Node.js and TypeScript.",
   "devDependencies": {

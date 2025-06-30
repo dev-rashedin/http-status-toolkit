@@ -1,5 +1,10 @@
 # http-status-toolkit
 
+[![npm version](https://img.shields.io/npm/v/http-status-toolkit)](https://www.npmjs.com/package/http-status-toolkit)
+[![license](https://img.shields.io/npm/l/http-status-toolkit)](./LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/Rashedin-063/http-status-toolkit?style=social)](https://github.com/Rashedin-063/http-status-toolkit)
+
+
 A simple and lightweight toolkit for HTTP status codes and messages — written in TypeScript for safe, reliable usage.
 
 ---
@@ -88,5 +93,11 @@ MIT License. See the LICENSE file.
 
 ## Contributions
 Feel free to suggest improvements or add new status codes by opening issues or pull requests on GitHub.
+
+
+## Links
+
+- [GitHub Repository](https://github.com/Rashedin-063/http-status-toolkit)  
+- [My Portfolio](https://www.rashedin.dev)
 
 
