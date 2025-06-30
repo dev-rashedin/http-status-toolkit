@@ -14,7 +14,10 @@
   },
   "./get-message": {
     "import": "./dist/getStatusMessage.js"
-  }
+  },
+  "./types": {
+  "import": "./dist/types.js"
+}
 },
   "scripts": {
      "build": "tsc",
