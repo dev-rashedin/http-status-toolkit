@@ -1,41 +1,60 @@
 {
   "name": "http-status-toolkit",
   "version": "1.0.0",
-  "main": "./src/index.js",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/statusCodes.js"
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./codes": {
+      "import": "./dist/statusCodes.js",
+      "require": "./dist/statusCodes.cjs",
+      "types": "./dist/statusCodes.d.ts"
     },
     "./messages": {
-      "import": "./dist/StatusMessages.js"
+      "import": "./dist/statusMessage.js",
+      "require": "./dist/statusMessage.cjs",
+      "types": "./dist/statusMessage.d.ts"
     },
     "./messages-long": {
-      "import": "./dist/LongStatusMessages.js"
+      "import": "./dist/longStatusMessages.js",
+      "require": "./dist/longStatusMessages.cjs",
+      "types": "./dist/longStatusMessages.d.ts"
     },
     "./get-message": {
-      "import": "./dist/getStatusMessage.js"
+      "import": "./dist/getStatusMessage.js",
+      "require": "./dist/getStatusMessage.cjs",
+      "types": "./dist/getStatusMessage.d.ts"
     }
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsup",
     "start": "node dist/index.js",
     "dev": "ts-node src/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [
     "http",
     "status-codes",
     "http-status",
     "node",
-    "express"
+    "express",
+    "typescript",
+    "rest-api"
   ],
   "author": "Rashedin Islam",
   "license": "MIT",
-  "description": "",
-  "dependencies": {
-    "express": "^5.1.0"
-  },
+  "description": "A lightweight and developer-friendly toolkit for working with HTTP status codes and messages in Node.js and TypeScript.",
   "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.0.3",
+    "ts-jest": "^29.4.0",
+    "ts-node": "^10.9.2",
     "tsup": "^8.5.0",
     "typescript": "^5.8.3"
   }
