@@ -1,7 +1,7 @@
 
 // generate long status message if required
 
-export const LongStatusMessages = {
+export const DetailedStatusMessages = {
   // --- 1xx: Informational ---
   100: 'Continue. Request received, continue to send the rest of the request.',
   101: 'Switching Protocols. Protocol switch initiated as requested by the client.',
@@ -74,35 +74,35 @@ export const LongStatusMessages = {
   510: 'Not Extended. Further extensions are required for the server to fulfill the request.',
   511: 'Network Authentication Required. The client must authenticate to gain network access.',
 
-  // Unofficial
-  419: 'Page expired due to missing or invalid CSRF token.',
-  420: 'Request rate limited; please slow down.',
-  450: 'Access blocked by Windows parental control settings.',
-  498: 'Token provided is invalid or expired.',
-  509: 'Bandwidth limit exceeded as per server settings.',
-  530: 'Site is frozen due to inactivity or administrative action.',
-  598: 'Network read timed out behind a proxy server.',
-  599: 'Network connection timed out during communication.',
+  // --- Unofficial Codes ---
+  419: 'Page Expired. Page expired due to missing or invalid CSRF token.',
+  420: 'Method Failure. Request rate limited; please slow down.',
+  450: 'Blocked by Windows Parental Controls. Access blocked by Windows parental control settings.',
+  498: 'Invalid Token. Token provided is invalid or expired.',
+  509: 'Bandwidth Limit Exceeded. Bandwidth limit exceeded as per server settings.',
+  530: 'Site Frozen. Site is frozen due to inactivity or administrative action.',
+  598: 'Network Read Timeout Error. Network read timed out behind a proxy server.',
+  599: 'Network Connect Timeout Error. Network connection timed out during communication.',
 
-  // NGINX
-  444: 'No response returned; connection closed immediately.',
-  494: 'Request header is too large to be processed by the server.',
-  495: 'Invalid client SSL certificate provided.',
-  496: 'Client SSL certificate required but not provided.',
-  497: 'HTTP request sent to an HTTPS port by mistake.',
-  499: 'Client closed the request before server responded.',
+  // --- NGINX ---
+  444: 'No Response. No response returned; connection closed immediately.',
+  494: 'Request Header Too Large. Request header is too large to be processed by the server.',
+  495: 'SSL Certificate Error. Invalid client SSL certificate provided.',
+  496: 'SSL Certificate Required. Client SSL certificate required but not provided.',
+  497: 'HTTP Request Sent to HTTPS Port. HTTP request sent to an HTTPS port by mistake.',
+  499: 'Client Closed Request. Client closed the request before server responded.',
 
-  // Cloudflare
-  520: 'Unknown error from origin server; connection reset or invalid response.',
-  521: 'Origin server refused connection from Cloudflare.',
-  522: 'TCP handshake timed out between Cloudflare and origin server.',
-  523: 'Cloudflare could not reach the origin server.',
-  524: 'Timeout occurred waiting for response from origin server.',
-  525: 'SSL/TLS handshake failed between Cloudflare and origin server.',
-  526: 'Origin server presented an invalid SSL certificate.',
-  527: 'Request timed out or failed after WAN connection was established.',
+  // --- Cloudflare ---
+  520: 'Unknown Error. Unknown error from origin server; connection reset or invalid response.',
+  521: 'Web Server Is Down. Origin server refused connection from Cloudflare.',
+  522: 'Connection Timed Out. TCP handshake timed out between Cloudflare and origin server.',
+  523: 'Origin Is Unreachable. Cloudflare could not reach the origin server.',
+  524: 'A Timeout Occurred. Timeout occurred waiting for response from origin server.',
+  525: 'SSL Handshake Failed. SSL/TLS handshake failed between Cloudflare and origin server.',
+  526: 'Invalid SSL Certificate. Origin server presented an invalid SSL certificate.',
+  527: 'Railgun Error. Request timed out or failed after WAN connection was established.',
 } as const;
 
 
-export type LongStatusMessage =
-  (typeof LongStatusMessages)[keyof typeof LongStatusMessages];
+export type DetailedStatusMessage =
+  (typeof DetailedStatusMessages)[keyof typeof DetailedStatusMessages];

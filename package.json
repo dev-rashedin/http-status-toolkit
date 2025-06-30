@@ -17,14 +17,14 @@
       "types": "./dist/statusCodes.d.ts"
     },
     "./messages": {
-      "import": "./dist/statusMessage.js",
-      "require": "./dist/statusMessage.cjs",
-      "types": "./dist/statusMessage.d.ts"
+      "import": "./dist/statusMessages.js",
+      "require": "./dist/statusMessages.cjs",
+      "types": "./dist/statusMessages.d.ts"
     },
     "./messages-long": {
-      "import": "./dist/longStatusMessages.js",
-      "require": "./dist/longStatusMessages.cjs",
-      "types": "./dist/longStatusMessages.d.ts"
+      "import": "./dist/detailedStatusMessages.js",
+      "require": "./dist/detailedStatusMessages.cjs",
+      "types": "./dist/detailedStatusMessages.d.ts"
     },
     "./get-message": {
       "import": "./dist/getStatusMessage.js",
