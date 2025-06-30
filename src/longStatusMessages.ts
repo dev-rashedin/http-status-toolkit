@@ -1,4 +1,7 @@
-export const StatusMessages = {
+
+// generate long status message if required
+
+const LongStatusMessages = {
   // --- 1xx: Informational ---
   100: 'Request received, continue to send the rest of the request.',
   101: 'Protocol switch initiated as requested by the client.',
@@ -74,5 +77,8 @@ export const StatusMessages = {
 } as const;
 
 
-export type StatusMessage =
-  (typeof StatusMessages)[keyof typeof StatusMessages];
+export default LongStatusMessages;
+
+
+export type LongStatusMessages =
+  (typeof LongStatusMessages)[keyof typeof LongStatusMessages];

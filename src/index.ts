@@ -1,13 +1,8 @@
-
 import { StatusCodes } from './statusCodes';
-import { StatusMessages } from './statusMessages';
+import StatusMessages from './statusMessage';
+import LongStatusMessages from './longStatusMessages';
 import { getStatusMessage } from './getStatusMessage';
-import { ShortStatusMessages } from './shortStatusMessage';
 
 
-export {
-  StatusCodes,
-  StatusMessages,
-  ShortStatusMessages,
-  getStatusMessage
-}
+
+export { StatusCodes, StatusMessages, LongStatusMessages, getStatusMessage };

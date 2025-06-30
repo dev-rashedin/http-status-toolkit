@@ -7,13 +7,10 @@
     "import": "./dist/statusCodes.js"
   },
   "./short": {
-    "import": "./dist/messages/short.js"
-  },
-  "./medium": {
-    "import": "./dist/messages/medium.js"
+    "import": "./dist/short.js"
   },
   "./long": {
-    "import": "./dist/messages/long.js"
+    "import": "./dist/long.js"
   },
   "./get-message": {
     "import": "./dist/getMessage.js"

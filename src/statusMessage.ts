@@ -1,4 +1,7 @@
-export const ShortStatusMessages = {
+
+// generate status message is required
+
+const StatusMessages = {
   // --- 1xx: Informational ---
   100: 'Continue',
   101: 'Switching Protocols',
@@ -72,6 +75,9 @@ export const ShortStatusMessages = {
   511: 'Network Authentication Required',
   599: 'Network Connect Timeout Error',
 } as const;
+
+
+export default StatusMessages;
 
 export type StatusMessage =
   (typeof StatusMessages)[keyof typeof StatusMessages];
