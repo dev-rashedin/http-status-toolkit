@@ -1,7 +1,7 @@
-# http-status-toolkit
+# http-status-toolkit-beta
 
 > ⚠️ **Beta version 1.0.0** — This package is under active development.
-
+<!--  -->
 [![npm version](https://img.shields.io/npm/v/http-status-toolkit)](https://www.npmjs.com/package/http-status-toolkit)
 [![license](https://img.shields.io/npm/l/http-status-toolkit)](./LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/Rashedin-063/http-status-toolkit?style=social)](https://github.com/Rashedin-063/http-status-toolkit)
@@ -28,9 +28,9 @@ This package gives you:
 Use npm or yarn to add it to your project:
 
 ```bash
-npm install http-status-toolkit
+npm install http-status-toolkit-beta
 # or
-yarn add http-status-toolkit 
+yarn add http-status-toolkit-beta
 ```
 
 
@@ -43,7 +43,7 @@ import {
   StatusMessages,
   DetailedStatusMessages,
   getStatusMessage,
-} from 'http-status-toolkit';
+} from 'http-status-toolkit-beta';
 
 // Get the status code number
 console.log(StatusCodes.OK); // 200
