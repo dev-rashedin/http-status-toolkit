@@ -1,5 +1,7 @@
 # http-status-toolkit
 
+> ⚠️ **Beta version 1.0.0** — This package is under active development.
+
 [![npm version](https://img.shields.io/npm/v/http-status-toolkit)](https://www.npmjs.com/package/http-status-toolkit)
 [![license](https://img.shields.io/npm/l/http-status-toolkit)](./LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/Rashedin-063/http-status-toolkit?style=social)](https://github.com/Rashedin-063/http-status-toolkit)
@@ -84,7 +86,7 @@ console.log(DetailedStatusMessages[StatusCodes.FORBIDDEN]);
 | 500  | SERVER_ERROR   | Server crashed  |
 
 🔗 **[See full list of status codes](./docs/status-codes-with-short-message.md)**  
-🔗 **[See detailed messages](./docs/status-codes-with-detailed-message.md)**
+🔗 **[See status codes with detailed messages](./docs/status-codes-with-detailed-message.md)**
 
 
 
@@ -113,7 +115,10 @@ Feel free to suggest improvements or add new status codes by opening issues or p
 
 ## Links
 
-- [GitHub Repository](https://github.com/Rashedin-063/http-status-toolkit)  
-- [My Portfolio](https://www.rashedin.dev)
+- **GitHub:** [Rashedin-063](https://github.com/Rashedin-063)
+- **Portfolio:** [rashedin.dev](https://www.rashedin.dev)
 
+---
+
+Made with ❤️ by [Rashedin Islam](https://www.rashedin.dev)
 

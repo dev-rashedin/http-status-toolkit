@@ -4,34 +4,31 @@
   "type": "module",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/index.js",
-      "require": "./dist/index.cjs",
-      "types": "./dist/index.d.ts"
-    },
-    "./codes": {
-      "import": "./dist/statusCodes.js",
-      "require": "./dist/statusCodes.cjs",
-      "types": "./dist/statusCodes.d.ts"
+      "require": "./dist/index.cjs"
     },
     "./messages": {
       "import": "./dist/statusMessages.js",
-      "require": "./dist/statusMessages.cjs",
-      "types": "./dist/statusMessages.d.ts"
+      "require": "./dist/statusMessages.cjs"
     },
-    "./messages-detailed": {
+    "./detailed-messages": {
       "import": "./dist/detailedStatusMessages.js",
-      "require": "./dist/detailedStatusMessages.cjs",
-      "types": "./dist/detailedStatusMessages.d.ts"
+      "require": "./dist/detailedStatusMessages.cjs"
     },
     "./get-message": {
       "import": "./dist/getStatusMessage.js",
-      "require": "./dist/getStatusMessage.cjs",
-      "types": "./dist/getStatusMessage.d.ts"
+      "require": "./dist/getStatusMessage.cjs"
     }
   },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "docs"
+  ],
   "scripts": {
     "build": "tsup",
     "start": "node dist/index.js",
