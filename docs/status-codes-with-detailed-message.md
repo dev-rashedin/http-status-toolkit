@@ -1,6 +1,10 @@
 # Detailed HTTP Status Messages
 
-This document provides detailed descriptions of HTTP status codes, including unofficial and vendor-specific ones.
+This document provides detailed descriptions of HTTP status codes, including unofficial and vendor-specific ones provided by `http-status-toolkit`. Each entry shows:
+
+- The numerical code
+- Its constant name (TypeScript-safe)
+- A detailed message
 
 ---
 

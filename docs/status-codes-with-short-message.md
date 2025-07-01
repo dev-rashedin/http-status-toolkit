@@ -1,6 +1,6 @@
 # HTTP Status Codes Documentation
 
-This document includes all the supported HTTP status codes provided by `http-status-toolkit`. Each entry shows:
+This document includes all the supported HTTP status codes, including unofficial and vendor-specific ones provided by `http-status-toolkit`. Each entry shows:
 
 - The numerical code
 - Its constant name (TypeScript-safe)

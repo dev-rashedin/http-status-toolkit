@@ -71,6 +71,22 @@ console.log(DetailedStatusMessages[StatusCodes.FORBIDDEN]);
 - `getStatusMessage(code, detailed?)`: returns either a short or detailed message for a given status code
 
 
+## Common HTTP Status Codes
+
+| Code | Constant       | Message         |
+|------|----------------|-----------------|
+| 200  | OK             | Request OK      |
+| 201  | CREATED        | Resource created|
+| 400  | BAD_REQUEST    | Bad input       |
+| 401  | UNAUTHORIZED   | Auth required   |
+| 403  | FORBIDDEN      | Access denied   |
+| 404  | NOT_FOUND      | Not found       |
+| 500  | SERVER_ERROR   | Server crashed  |
+
+🔗 **[See full list of status codes](./docs/status-codes-with-short-message.md)**  
+🔗 **[See detailed messages](./docs/status-codes-with-detailed-message.md)**
+
+
 
 ## TypeScript & Module Support
 
