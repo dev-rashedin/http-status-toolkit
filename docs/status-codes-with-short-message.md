@@ -57,6 +57,7 @@ This document includes all the supported HTTP status codes provided by `http-sta
 | 422  | UNPROCESSABLE_ENTITY            | Unprocessable Entity            |
 | 423  | LOCKED                          | Locked                          |
 | 424  | FAILED_DEPENDENCY               | Failed Dependency               |
+| 425  | TOO_EARLY               | Too Early               |
 | 426  | UPGRADE_REQUIRED                | Upgrade Required                |
 | 428  | PRECONDITION_REQUIRED           | Precondition Required           |
 | 429  | TOO_MANY_REQUESTS               | Too Many Requests               |
@@ -81,25 +82,13 @@ This document includes all the supported HTTP status codes provided by `http-sta
 | Code | Constant                         | Message                                 |
 |------|-----------------------------------|------------------------------------------|
 | 419  | PAGE_EXPIRED                     | Page Expired                            |
-| 420  | METHOD_FAILURE                   | Method Failure                          |
 | 420  | ENHANCE_YOUR_CALM                | Enhance Your Calm                       |
 | 450  | BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS | Blocked by Parental Controls       |
 | 498  | INVALID_TOKEN                    | Invalid Token                           |
-| 499  | TOKEN_REQUIRED                   | Token Required                          |
 | 509  | BANDWIDTH_LIMIT_EXCEEDED         | Bandwidth Limit Exceeded                |
 | 530  | SITE_IS_FROZEN                   | Site is Frozen                          |
 | 598  | NETWORK_READ_TIMEOUT_ERROR       | Network Read Timeout Error              |
 | 599  | NETWORK_CONNECT_TIMEOUT_ERROR    | Network Connect Timeout Error           |
-
----
-
-## 🪟 Microsoft IIS Codes
-
-| Code | Constant          | Message           |
-|------|-------------------|--------------------|
-| 440  | LOGIN_TIMEOUT     | Login Timeout      |
-| 449  | RETRY_WITH        | Retry With         |
-| 451  | REDIRECT          | Redirect           |
 
 ---
 

@@ -5,9 +5,9 @@ import { DetailedStatusMessages } from './detailedStatusMessages';
 
 export function getStatusMessage(
   statusCode: StatusCode,
-  detailed = false
+  variant = 'default'
 ): string {
-  return detailed
+  return variant === 'detailed'
     ? DetailedStatusMessages[statusCode] ?? 'Unknown Status'
     : StatusMessages[statusCode] ?? 'Unknown Status';
 }

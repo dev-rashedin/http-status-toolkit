@@ -50,8 +50,8 @@ console.log(StatusCodes.OK); // 200
 console.log(getStatusMessage(StatusCodes.NOT_FOUND));
 // Output: "Not Found"
 
-// Get a detailed message
-console.log(getStatusMessage(StatusCodes.NOT_FOUND, true));
+// Get a detailed message (pass 'detailed' as second parameter)
+console.log(getStatusMessage(StatusCodes.NOT_FOUND, 'detailed'));
 // Output: "Not Found: The requested resource could not be found but may be available in the future."
 
 // You can also access messages directly
