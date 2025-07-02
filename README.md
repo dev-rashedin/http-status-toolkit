@@ -65,12 +65,16 @@ console.log(DetailedStatusMessages[StatusCodes.FORBIDDEN]);
 ```
 
 
-
 ## What’s included?
 - `StatusCodes`: constants for all HTTP status codes
 - `StatusMessages`: short messages for each code
 - `DetailedStatusMessages`: longer, more detailed messages
-- `getStatusMessage(code, detailed?)`: returns either a short or detailed message for a given status code
+- `getStatusMessage(code, 'detailed'?)`: returns either a short or detailed message for a given status code
+
+
+> **Note:** The function `getStatusMessage` returns the HTTP reason phrase for a status code.  
+> We chose the name `getStatusMessage` to keep it simple and clear.  
+> You can also use the alias `getReasonPhrase`, which behaves the same way.
 
 
 ## Common HTTP Status Codes
