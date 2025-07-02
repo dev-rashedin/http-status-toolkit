@@ -1,6 +1,14 @@
 {
   "name": "http-status-toolkit",
   "version": "1.0.0",
+  "description": "A lightweight and developer-friendly toolkit for working with HTTP status codes and messages in Node.js and TypeScript.",
+  "author": "Rashedin Islam <rashedinislam.06@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rashedin-063/http-status-toolkit.git"
+  },
+  "homepage": "https://github.com/Rashedin-063/http-status-toolkit#readme",
   "type": "module",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
@@ -29,6 +37,7 @@
     "LICENSE",
     "docs"
   ],
+  "sideEffects": false,
   "scripts": {
     "build": "tsup",
     "start": "node dist/index.js",
@@ -45,14 +54,6 @@
     "typescript",
     "rest-api"
   ],
-  "author": "Rashedin Islam <rashedinislam.06@gmail.com>",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Rashedin-063/http-status-toolkit.git"
-  },
-  "homepage": "https://github.com/Rashedin-063/http-status-toolkit#readme",
-  "description": "A lightweight and developer-friendly toolkit for working with HTTP status codes and messages in Node.js and TypeScript.",
   "devDependencies": {
     "@types/jest": "^30.0.0",
     "jest": "^30.0.3",
@@ -60,5 +61,6 @@
     "ts-node": "^10.9.2",
     "tsup": "^8.5.0",
     "typescript": "^5.8.3"
-  }
+  },
+  "packageManager": "npm@10.9.1"
 }

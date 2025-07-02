@@ -1,9 +1,10 @@
 # http-status-toolkit
 
-<!--  -->
 [![npm version](https://img.shields.io/npm/v/http-status-toolkit)](https://www.npmjs.com/package/http-status-toolkit)
-[![license](https://img.shields.io/npm/l/http-status-toolkit)](./LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/Rashedin-063/http-status-toolkit?style=social)](https://github.com/Rashedin-063/http-status-toolkit)
+[![license](https://img.shields.io/npm/l/http-status-toolkit)](https://github.com/Rashedin-063/http-status-toolkit/blob/main/LICENSE)
+[![downloads](https://img.shields.io/npm/dw/http-status-toolkit)](https://www.npmjs.com/package/http-status-toolkit)
+[![GitHub stars](https://img.shields.io/github/stars/Rashedin-063/http-status-toolkit?style=social)](https://github.com/Rashedin-063/http-status-toolkit/stargazers)
+
 
 
 A simple and lightweight toolkit for HTTP status codes and messages — written in TypeScript for safe, reliable usage.
