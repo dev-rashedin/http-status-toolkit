@@ -5,7 +5,7 @@ This project adheres to [Semantic Versioning](https://semver.org) and follows [C
 
 ---
 
-## [1.0.1](https://github.com/Rashedin-063/http-status-toolkit/releases/tag/v1.0.1) – 2025-07-02
+## [1.0.1](https://github.com/Rashedin-063/http-status-toolkit/releases/tag/v1.0.2) – 2025-07-02
 
 ### 🛠️ Fixes
 
