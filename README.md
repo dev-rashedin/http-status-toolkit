@@ -89,6 +89,8 @@ console.log(DetailedStatusMessages[StatusCodes.FORBIDDEN]);
 | 404  | NOT_FOUND      | Not found       |
 | 500  | SERVER_ERROR   | Server crashed  |
 
+
+
 🔗 **[See full list of status codes](./docs/status-codes-with-short-message.md)**  
 🔗 **[See status codes with detailed messages](./docs/status-codes-with-detailed-message.md)**
 
