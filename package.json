@@ -1,14 +1,14 @@
 {
   "name": "http-status-toolkit",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A lightweight and developer-friendly toolkit for working with HTTP status codes and messages in Node.js and TypeScript.",
   "author": "Rashedin Islam <rashedinislam.06@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Rashedin-063/http-status-toolkit.git"
+    "url": "https://github.com/dev-rashedin/http-status-toolkit.git"
   },
-  "homepage": "https://github.com/Rashedin-063/http-status-toolkit#readme",
+  "homepage": "https://github.com/dev-rashedin/http-status-toolkit#readme",
   "type": "module",
   "main": "dist/index.cjs",
   "module": "dist/index.js",

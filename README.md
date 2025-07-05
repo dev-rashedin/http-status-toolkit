@@ -5,11 +5,17 @@
 [![license](https://img.shields.io/npm/l/http-status-toolkit)](https://github.com/dev-rashedin/http-status-toolkit/blob/main/LICENSE)
 [![downloads](https://img.shields.io/npm/dw/http-status-toolkit)](https://www.npmjs.com/package/http-status-toolkit)
 [![GitHub stars](https://img.shields.io/github/stars/dev-rashedin/http-status-toolkit?style=social)](https://github.com/dev-rashedin/http-status-toolkit/stargazers)
+![minified](https://badgen.net/bundlephobia/min/http-status-toolkit)
+![minified gzip](https://badgen.net/bundlephobia/minzip/http-status-toolkit)
 
 
+👉 [View on npm](https://www.npmjs.com/package/http-status-toolkit)
 
 
 A simple and lightweight toolkit for HTTP status codes and messages — written in TypeScript for safe, reliable usage.
+
+If you like the project, please give the project a GitHub ⭐
+
 
 ---
 
@@ -123,7 +129,7 @@ Feel free to suggest improvements or add new status codes by opening issues or p
 
 ## Links
 
-- **GitHub:** [Rashedin-063](https://github.com/Rashedin-063)
+- **GitHub:** [Rashedin-063](https://github.com/dev-rashedin)
 - **Portfolio:** [rashedin.dev](https://www.rashedin.dev)
 
 ---
