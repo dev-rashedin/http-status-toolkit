@@ -1,9 +1,11 @@
 # http-status-toolkit
 
 [![npm version](https://img.shields.io/npm/v/http-status-toolkit)](https://www.npmjs.com/package/http-status-toolkit)
-[![license](https://img.shields.io/npm/l/http-status-toolkit)](https://github.com/Rashedin-063/http-status-toolkit/blob/main/LICENSE)
+![typescript](https://badgen.net/badge/icon/typescript?icon=typescript&label)
+[![license](https://img.shields.io/npm/l/http-status-toolkit)](https://github.com/dev-rashedin/http-status-toolkit/blob/main/LICENSE)
 [![downloads](https://img.shields.io/npm/dw/http-status-toolkit)](https://www.npmjs.com/package/http-status-toolkit)
-[![GitHub stars](https://img.shields.io/github/stars/Rashedin-063/http-status-toolkit?style=social)](https://github.com/Rashedin-063/http-status-toolkit/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/dev-rashedin/http-status-toolkit?style=social)](https://github.com/dev-rashedin/http-status-toolkit/stargazers)
+
 
 
 
