@@ -19,12 +19,12 @@
     "require": "./dist/index.cjs"
   },
   "./detailed-messages": {
-    "import": "./dist/detailedStatusMessages.js",
-    "require": "./dist/detailedStatusMessages.cjs"
+    "import": "./dist/detailed-status-messages.js",
+    "require": "./dist/detailed-status-messages.cjs"
   },
   "./messages-bn": {
-    "import": "./dist/localization/bengali-status-codes.js",
-    "require": "./dist/localization/bengali-status-codes.cjs"
+    "import": "./dist/localization/bengali-status-messages.js",
+    "require": "./dist/localization/bengali-status-messages.cjs"
   }
 },
 "types": "./dist/index.d.ts",
