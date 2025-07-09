@@ -12,29 +12,28 @@
   "type": "module",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
-  "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
-    },
-    "./messages": {
-      "import": "./dist/statusMessages.js",
-      "require": "./dist/statusMessages.cjs"
-    },
-    "./detailed-messages": {
-      "import": "./dist/detailedStatusMessages.js",
-      "require": "./dist/detailedStatusMessages.cjs"
-    },
-    "./get-message": {
-      "import": "./dist/getStatusMessage.js",
-      "require": "./dist/getStatusMessage.cjs"
-    },
-    "./messages-bn": {
+
+"exports": {
+  ".": {
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs"
+  },
+  "./detailed-messages": {
+    "import": "./dist/detailedStatusMessages.js",
+    "require": "./dist/detailedStatusMessages.cjs"
+  },
+  "./messages-bn": {
     "import": "./dist/localization/bengali-status-codes.js",
     "require": "./dist/localization/bengali-status-codes.cjs"
   }
-  },
+},
+"types": "./dist/index.d.ts",
+"typesVersions": {
+  "*": {
+    "detailed-messages": ["dist/detailed-status-messages.d.ts"],
+    "messages-bn": ["dist/localization/bengali-status-messages.d.ts"]
+  }
+},
   "files": [
     "dist",
     "README.md",
