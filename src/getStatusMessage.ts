@@ -1,13 +1,19 @@
 // import shortMessages from './shortStatusMessages';
-import type { StatusCode } from './statusCodes';
-import { StatusMessages } from './statusMessages';
-import { DetailedStatusMessages } from './detailedStatusMessages';
+import type { StatusCode } from './status-codes';
+import { StatusMessages } from './status-messages';
+import { DetailedStatusMessages } from './detailed-status-messages';
 
 export function getStatusMessage(
-  statusCode: StatusCode,
-  variant = 'default'
+  code: StatusCode,
+  options?: { messages?: Record<number, string>; variant?: 'detailed' }
 ): string {
-  return variant === 'detailed'
-    ? DetailedStatusMessages[statusCode] ?? 'Unknown Status'
-    : StatusMessages[statusCode] ?? 'Unknown Status';
+  if (options?.messages) {
+    return options.messages[code] ?? 'Unknown Status';
+  }
+
+  if (options?.variant === 'detailed') {
+    return DetailedStatusMessages[code] ?? 'Unknown Status';
+  }
+
+  return StatusMessages[code] ?? 'Unknown Status';
 }
