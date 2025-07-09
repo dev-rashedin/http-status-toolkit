@@ -4,7 +4,6 @@
 ![typescript](https://badgen.net/badge/icon/typescript?icon=typescript&label)
 [![license](https://img.shields.io/npm/l/http-status-toolkit)](https://github.com/dev-rashedin/http-status-toolkit/blob/main/LICENSE)
 [![downloads](https://img.shields.io/npm/dw/http-status-toolkit)](https://www.npmjs.com/package/http-status-toolkit)
-[![GitHub stars](https://img.shields.io/github/stars/dev-rashedin/http-status-toolkit?style=social)](https://github.com/dev-rashedin/http-status-toolkit/stargazers)
 ![minified](https://badgen.net/bundlephobia/min/http-status-toolkit)
 ![minified gzip](https://badgen.net/bundlephobia/minzip/http-status-toolkit)
 

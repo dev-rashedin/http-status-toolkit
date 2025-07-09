@@ -29,7 +29,11 @@
     "./get-message": {
       "import": "./dist/getStatusMessage.js",
       "require": "./dist/getStatusMessage.cjs"
-    }
+    },
+    "./messages-bn": {
+    "import": "./dist/localization/bengali-status-codes.js",
+    "require": "./dist/localization/bengali-status-codes.cjs"
+  }
   },
   "files": [
     "dist",
@@ -39,6 +43,7 @@
   "sideEffects": false,
   "scripts": {
     "build": "tsup",
+    "prepare": "npm run build",
     "start": "node dist/index.js",
     "dev": "ts-node src/index.ts",
     "test": "jest",
