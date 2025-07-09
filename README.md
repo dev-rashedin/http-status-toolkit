@@ -7,14 +7,11 @@
 ![minified](https://badgen.net/bundlephobia/min/http-status-toolkit)
 ![minified gzip](https://badgen.net/bundlephobia/minzip/http-status-toolkit)
 
-
 👉 [View on npm](https://www.npmjs.com/package/http-status-toolkit)
-
 
 A simple and lightweight toolkit for HTTP status codes and messages — written in TypeScript for safe, reliable usage.
 
 If you like the project, please give the project a GitHub ⭐
-
 
 ---
 
@@ -30,16 +27,21 @@ This package gives you:
 
 ---
 
-## How to install
+# 🚀 Installation Guide
 
-Use npm or yarn to add it to your project:
+You can install **http-status-toolkit** using your favorite package manager.
+
+## Using npm
 
 ```bash
 npm install http-status-toolkit
-# or
-yarn add http-status-toolkit
 ```
 
+## Using yarn
+
+```bash
+yarn add http-status-toolkit
+```
 
 ## How to use
 
@@ -48,7 +50,6 @@ yarn add http-status-toolkit
 import {
   StatusCodes,
   StatusMessages,
-  DetailedStatusMessages,
   getStatusMessage,
 } from 'http-status-toolkit';
 
@@ -71,37 +72,31 @@ console.log(DetailedStatusMessages[StatusCodes.FORBIDDEN]);
 // Output: "Forbidden: The server understood the request but refuses to authorize it."
 ```
 
-
 ## What’s included?
+
 - `StatusCodes`: constants for all HTTP status codes
 - `StatusMessages`: short messages for each code
 - `DetailedStatusMessages`: longer, more detailed messages
 - `getStatusMessage(code, 'detailed'?)`: returns either a short or detailed message for a given status code
 
-
 > **Note:** The function `getStatusMessage` returns the HTTP reason phrase for a status code.  
 > We chose the name `getStatusMessage` to keep it simple and clear.  
 > You can also use the alias `getReasonPhrase`, which behaves the same way.
 
-
 ## Common HTTP Status Codes
 
-| Code | Constant       | Message         |
-|------|----------------|-----------------|
-| 200  | OK             | Request OK      |
-| 201  | CREATED        | Resource created|
-| 400  | BAD_REQUEST    | Bad input       |
-| 401  | UNAUTHORIZED   | Auth required   |
-| 403  | FORBIDDEN      | Access denied   |
-| 404  | NOT_FOUND      | Not found       |
-| 500  | SERVER_ERROR   | Server crashed  |
-
-
+| Code | Constant     | Message          |
+| ---- | ------------ | ---------------- |
+| 200  | OK           | Request OK       |
+| 201  | CREATED      | Resource created |
+| 400  | BAD_REQUEST  | Bad input        |
+| 401  | UNAUTHORIZED | Auth required    |
+| 403  | FORBIDDEN    | Access denied    |
+| 404  | NOT_FOUND    | Not found        |
+| 500  | SERVER_ERROR | Server crashed   |
 
 🔗 **[See full list of status codes](./docs/status-codes-with-short-message.md)**  
 🔗 **[See status codes with detailed messages](./docs/status-codes-with-detailed-message.md)**
-
-
 
 ## TypeScript & Module Support
 
@@ -118,13 +113,13 @@ import { StatusCodes } from 'http-status-toolkit';
 const { StatusCodes } = require('http-status-toolkit');
 ```
 
-
 ## License
+
 MIT License. See the LICENSE file.
 
 ## Contributions
-Feel free to suggest improvements or add new status codes by opening issues or pull requests on GitHub.
 
+Feel free to suggest improvements or add new status codes by opening issues or pull requests on GitHub.
 
 ## Links
 
@@ -134,4 +129,3 @@ Feel free to suggest improvements or add new status codes by opening issues or p
 ---
 
 Made with ❤️ by [Rashedin Islam](https://www.rashedin.dev)
-
