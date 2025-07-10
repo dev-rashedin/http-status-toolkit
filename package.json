@@ -25,6 +25,18 @@
   "./messages-bn": {
     "import": "./dist/localization/bengali-status-messages.js",
     "require": "./dist/localization/bengali-status-messages.cjs"
+  },
+  "./messages-zh": {
+    "import": "./dist/localization/chinese-status-messages.js",
+    "require": "./dist/localization/chinese-status-messages.cjs"
+  },
+  "./messages-hi": {
+    "import": "./dist/localization/hindi-status-messages.js",
+    "require": "./dist/localization/hindi-status-messages.cjs"
+  },
+  "./messages-ar": {
+    "import": "./dist/localization/arabic-status-messages.js",
+    "require": "./dist/localization/arabic-status-messages.cjs"
   }
 },
 "types": "./dist/index.d.ts",
