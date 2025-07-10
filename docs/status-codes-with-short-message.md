@@ -126,4 +126,9 @@ To get messages programmatically:
 
 ```ts
 getStatusMessage(StatusCodes.NOT_FOUND); // "Not Found"
-getStatusMessage(StatusCodes.NOT_FOUND, true); // Detailed message
+getStatusMessage(StatusCodes.NOT_FOUND, {
+  variant: DetailedStatusMessage
+}); // Detailed message
+getStatusMessage(StatusCodes.NOT_FOUND, {
+  variant: GermanStatusMessages
+}); // German detailed message

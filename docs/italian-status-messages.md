@@ -74,7 +74,7 @@ Each entry includes:
 | 415 | Tipo di media non supportato. |
 | 416 | Intervallo non soddisfacente. |
 | 417 | Aspettativa fallita. |
-| 418 | Sono una teiera. |
+| 418 | Sono una teiera. Rifiuto di preparare il caffè. |
 | 421 | Richiesta mal indirizzata. |
 | 422 | Entità non elaborabile. Errore semantico. |
 | 423 | Bloccato. Risorsa bloccata. |
@@ -82,7 +82,7 @@ Each entry includes:
 | 425 | Troppo presto. Richiesta potrebbe essere ripetuta. |
 | 426 | Aggiornamento richiesto. Cambiare protocollo. |
 | 428 | Condizione richiesta. |
-| 429 | Troppi richieste. |
+| 429 | Troppe richieste. |
 | 431 | Campi header troppo grandi. |
 | 451 | Non disponibile per motivi legali. |
 
@@ -99,8 +99,8 @@ Each entry includes:
 | 504 | Timeout gateway. |
 | 505 | Versione HTTP non supportata. |
 | 506 | Variante negozia anche. Errore di configurazione. |
-| 507 | Spazio insufficiente. |
-| 508 | Loop rilevato. |
+| 507 | Spazio insufficiente. Impossibile salvare dati. |
+| 508 | Loop rilevato. Loop infinito individuato. |
 | 510 | Estensione richiesta. |
 | 511 | Autenticazione rete richiesta. |
 
@@ -129,4 +129,20 @@ Each entry includes:
 | 494 | Header richiesta troppo grande. |
 | 495 | Errore certificato SSL. |
 | 496 | Certificato SSL richiesto. |
-| 497 | Richiesta HTTP inviata alla porta
+| 497 | Richiesta HTTP inviata alla porta HTTPS. |
+| 499 | Richiesta chiusa dal client. |
+
+---
+
+## ☁️ Specifici Cloudflare
+
+| Code | Message |
+|------|---------|
+| 520 | Errore sconosciuto. Risposta sconosciuta dal server. |
+| 521 | Server web inattivo. Cloudflare non può connettersi. |
+| 522 | Timeout connessione. TCP handshake scaduto. |
+| 523 | Origine irraggiungibile. |
+| 524 | Timeout. Il server non ha risposto in tempo. |
+| 525 | Fallimento handshake SSL. |
+| 526 | Certificato SSL non valido. |
+| 527 | Errore Railgun. Problema dopo la connessione WAN. |
