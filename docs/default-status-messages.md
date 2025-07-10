@@ -125,10 +125,24 @@ This document includes all the supported HTTP status codes, including unofficial
 To get messages programmatically:
 
 ```ts
-getStatusMessage(StatusCodes.NOT_FOUND); // "Not Found"
+import { StatusCodes, getStatusMessage } from 'http-status-toolkit';
+import { DetailedStatusMessages } from 'http-status-toolkit/messages-detailed';
+import { GermanStatusMessages } from 'http-status-toolkit/messages-de';
+
+// Default (short English message)
+getStatusMessage(StatusCodes.NOT_FOUND); 
+// → "Not Found"
+
+// English (detailed)
 getStatusMessage(StatusCodes.NOT_FOUND, {
-  variant: DetailedStatusMessage
-}); // Detailed message
+  variant: DetailedStatusMessages,
+});
+// → "Not Found. The server cannot locate the requested resource."
+
+// German
 getStatusMessage(StatusCodes.NOT_FOUND, {
-  variant: GermanStatusMessages
-}); // German detailed message
+  variant: GermanStatusMessages,
+});
+// → "Nicht gefunden. Der Server kann die angeforderte Ressource nicht finden."
+
+```

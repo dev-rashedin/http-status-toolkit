@@ -49,7 +49,6 @@ yarn add http-status-toolkit
 // Import what you need from the toolkit
 import {
   StatusCodes,
-  StatusMessages,
   getStatusMessage,
 } from 'http-status-toolkit';
 
@@ -60,16 +59,15 @@ console.log(StatusCodes.OK); // 200
 console.log(getStatusMessage(StatusCodes.NOT_FOUND));
 // Output: "Not Found"
 
-// Get a detailed message (pass 'detailed' as second parameter)
-console.log(getStatusMessage(StatusCodes.NOT_FOUND, 'detailed'));
+// Get a detailed message (import detailed messages and pass variant)
+import DetailedMessages from 'http-status-toolkit/messages-detailed';
+console.log(getStatusMessage(StatusCodes.NOT_FOUND, { variant: DetailedMessages }));
 // Output: "Not Found: The requested resource could not be found but may be available in the future."
 
-// You can also access messages directly
-console.log(StatusMessages[StatusCodes.FORBIDDEN]);
-// Output: "Forbidden"
-
-console.log(DetailedStatusMessages[StatusCodes.FORBIDDEN]);
-// Output: "Forbidden: The server understood the request but refuses to authorize it."
+// Get a localized message (import a language variant)
+import BengaliMessages from 'http-status-toolkit/messages-bn';
+console.log(getStatusMessage(StatusCodes.NOT_FOUND, { variant: BengaliMessages }));
+// Output: (Not Found message in Bengali)
 ```
 
 ## What’s included?

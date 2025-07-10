@@ -1,5 +1,5 @@
 {
-  "name": "http-status-toolkit",
+  "name": "http-status-toolkit-beta",
   "version": "1.0.3",
   "description": "A lightweight and developer-friendly toolkit for working with HTTP status codes and messages in Node.js and TypeScript.",
   "author": "Rashedin Islam <rashedinislam.06@gmail.com>",
@@ -12,13 +12,12 @@
   "type": "module",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
-
 "exports": {
   ".": {
     "import": "./dist/index.js",
     "require": "./dist/index.cjs"
   },
-  "./detailed-messages": {
+  "./messages-detailed": {
     "import": "./dist/detailed-status-messages.js",
     "require": "./dist/detailed-status-messages.cjs"
   },
@@ -37,13 +36,46 @@
   "./messages-ar": {
     "import": "./dist/localization/arabic-status-messages.js",
     "require": "./dist/localization/arabic-status-messages.cjs"
+  },
+  "./messages-de": {
+    "import": "./dist/localization/german-status-messages.js",
+    "require": "./dist/localization/german-status-messages.cjs"
+  },
+  "./messages-fr": {
+    "import": "./dist/localization/french-status-messages.js",
+    "require": "./dist/localization/french-status-messages.cjs"
+  },
+  "./messages-it": {
+    "import": "./dist/localization/italian-status-messages.js",
+    "require": "./dist/localization/italian-status-messages.cjs"
+  },
+  "./messages-es": {
+    "import": "./dist/localization/spanish-status-messages.js",
+    "require": "./dist/localization/spanish-status-messages.cjs"
+  },
+  "./messages-ja": {
+    "import": "./dist/localization/japanese-status-messages.js",
+    "require": "./dist/localization/japanese-status-messages.cjs"
+  },
+  "./messages-ru": {
+    "import": "./dist/localization/russian-status-messages.js",
+    "require": "./dist/localization/russian-status-messages.cjs"
   }
 },
 "types": "./dist/index.d.ts",
 "typesVersions": {
   "*": {
-    "detailed-messages": ["dist/detailed-status-messages.d.ts"],
-    "messages-bn": ["dist/localization/bengali-status-messages.d.ts"]
+    "messages-detailed": ["dist/detailed-status-messages.d.ts"],
+    "messages-bn": ["dist/localization/bengali-status-messages.d.ts"],
+    "messages-zh": ["dist/localization/chinese-status-messages.d.ts"],
+    "messages-hi": ["dist/localization/hindi-status-messages.d.ts"],
+    "messages-ar": ["dist/localization/arabic-status-messages.d.ts"],
+    "messages-de": ["dist/localization/german-status-messages.d.ts"],
+    "messages-fr": ["dist/localization/french-status-messages.d.ts"],
+    "messages-it": ["dist/localization/italian-status-messages.d.ts"],
+    "messages-es": ["dist/localization/spanish-status-messages.d.ts"],
+    "messages-ja": ["dist/localization/japanese-status-messages.d.ts"],
+    "messages-ru": ["dist/localization/russian-status-messages.d.ts"]
   }
 },
   "files": [
