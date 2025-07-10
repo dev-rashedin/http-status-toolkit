@@ -3,7 +3,7 @@
 [![npm version](https://img.shields.io/npm/v/http-status-toolkit)](https://www.npmjs.com/package/http-status-toolkit)
 ![typescript](https://badgen.net/badge/icon/typescript?icon=typescript&label)
 [![license](https://img.shields.io/npm/l/http-status-toolkit)](https://github.com/dev-rashedin/http-status-toolkit/blob/main/LICENSE)
-[![downloads](https://img.shields.io/npm/dw/http-status-toolkit)](https://www.npmjs.com/package/http-status-toolkit)
+[![downloads](https://img.shields.io/npm/dm/http-status-toolkit)](https://www.npmjs.com/package/http-status-toolkit)
 ![minified](https://badgen.net/bundlephobia/min/http-status-toolkit)
 ![minified gzip](https://badgen.net/bundlephobia/minzip/http-status-toolkit)
 
