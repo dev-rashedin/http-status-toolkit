@@ -44,6 +44,11 @@ npm install http-status-toolkit
 yarn add http-status-toolkit
 ```
 
+## TypeScript & Module Support
+
+- ✅ Full TypeScript support with type safety and autocompletion  
+- ✅ Works in both ESM and CommonJS environments
+
 ---
 
 ## How to use
@@ -74,27 +79,6 @@ console.log(getStatusMessage(StatusCodes.NOT_FOUND, { variant: BengaliMessages }
 
 ---
 
-## Supported Languages (Localization)
-
-You can import message variants for different languages:
-
-| Language    | Import Path                           | Docs File                          |
-|-------------|-------------------------------------|-----------------------------------|
-| English (default)  | —                               | —                                 |
-| Detailed English   | `messages-detailed`              | [detailed-status-messages.md](./docs/detailed-status-messages.md) |
-| Bengali     | `messages-bn`                       | [bengali-status-messages.md](./docs/bengali-status-messages.md)   |
-| Chinese     | `messages-zh`                       | [chinese-status-messages.md](./docs/chinese-status-messages.md)   |
-| Hindi       | `messages-hi`                       | [hindi-status-messages.md](./docs/hindi-status-messages.md)       |
-| Arabic      | `messages-ar`                       | [arabic-status-messages.md](./docs/arabic-status-messages.md)     |
-| German      | `messages-de`                       | [german-status-messages.md](./docs/german-status-messages.md)     |
-| French      | `messages-fr`                       | [french-status-messages.md](./docs/french-status-messages.md)     |
-| Italian     | `messages-it`                       | [italian-status-messages.md](./docs/italian-status-messages.md)   |
-| Spanish     | `messages-es`                       | [spanish-status-messages.md](./docs/spanish-status-messages.md)   |
-| Japanese    | `messages-ja`                       | [japanese-status-messages.md](./docs/japanese-status-messages.md) |
-| Russian     | `messages-ru`                       | [russian-status-messages.md](./docs/russian-status-messages.md)   |
-
----
-
 ## What’s included?
 
 - `StatusCodes`: constants for all HTTP status codes  
@@ -120,23 +104,30 @@ You can import message variants for different languages:
 | 404  | NOT_FOUND    | Not found        |
 | 500  | SERVER_ERROR | Server crashed   |
 
-🔗 **[See full list of status codes](./docs/status-codes-with-short-message.md)**  
-🔗 **[See status codes with detailed messages](./docs/status-codes-with-detailed-message.md)**
+
+🔗 **[See full list of status codes](./docs/default-status-messages.md)**  
+🔗 **[See status codes with detailed messages](./docs/detailed-status-messages.md)**
 
 ---
 
-## TypeScript & Module Support
+## Supported Languages (Localization)
 
-- ✅ Full TypeScript support with type safety and autocompletion  
-- ✅ Works in both ESM and CommonJS environments
+You can import message variants for different languages:
 
-```ts
-// ESM
-import { StatusCodes } from 'http-status-toolkit';
-
-// CommonJS
-const { StatusCodes } = require('http-status-toolkit');
-```
+| Language    | Import Path                           | Docs File                          |
+|-------------|-------------------------------------|-----------------------------------|
+| English (default)  | —                               | —                                 |
+| Detailed English   | `messages-detailed`              | [detailed-status-messages.md](./docs/detailed-status-messages.md) |
+| Bengali     | `messages-bn`                       | [bengali-status-messages.md](./docs/bengali-status-messages.md)   |
+| Chinese     | `messages-zh`                       | [chinese-status-messages.md](./docs/chinese-status-messages.md)   |
+| Hindi       | `messages-hi`                       | [hindi-status-messages.md](./docs/hindi-status-messages.md)       |
+| Arabic      | `messages-ar`                       | [arabic-status-messages.md](./docs/arabic-status-messages.md)     |
+| German      | `messages-de`                       | [german-status-messages.md](./docs/german-status-messages.md)     |
+| French      | `messages-fr`                       | [french-status-messages.md](./docs/french-status-messages.md)     |
+| Italian     | `messages-it`                       | [italian-status-messages.md](./docs/italian-status-messages.md)   |
+| Spanish     | `messages-es`                       | [spanish-status-messages.md](./docs/spanish-status-messages.md)   |
+| Japanese    | `messages-ja`                       | [japanese-status-messages.md](./docs/japanese-status-messages.md) |
+| Russian     | `messages-ru`                       | [russian-status-messages.md](./docs/russian-status-messages.md)   |
 
 ---
 
