@@ -22,8 +22,7 @@ This package gives you:
 - HTTP status codes as constants (like `StatusCodes.OK` for 200)
 - Short and clear messages for each status code
 - Longer, more detailed messages if you want extra info
-- Localization support for 10+ languages
-- A helper function (`getStatusMessage`) to fetch messages by status code
+- A helper function (getStatusMessage) to fetch messages by status code
 - Full TypeScript support for better coding experience
 
 ---
@@ -32,23 +31,22 @@ This package gives you:
 
 You can install **http-status-toolkit** using your favorite package manager.
 
-### Using npm
+## Using npm
 
 ```bash
 npm install http-status-toolkit
 ```
 
-### Using yarn
+## Using yarn
 
 ```bash
 yarn add http-status-toolkit
 ```
 
----
-
 ## How to use
 
 ```ts
+// Import what you need from the toolkit
 import {
   StatusCodes,
   getStatusMessage,
@@ -72,41 +70,16 @@ console.log(getStatusMessage(StatusCodes.NOT_FOUND, { variant: BengaliMessages }
 // Output: (Not Found message in Bengali)
 ```
 
----
-
-## Supported Languages (Localization)
-
-You can import message variants for different languages:
-
-| Language    | Import Path                           | Docs File                          |
-|-------------|-------------------------------------|-----------------------------------|
-| English (default)  | —                               | —                                 |
-| Detailed English   | `messages-detailed`              | [detailed-status-messages.md](./docs/detailed-status-messages.md) |
-| Bengali     | `messages-bn`                       | [bengali-status-messages.md](./docs/bengali-status-messages.md)   |
-| Chinese     | `messages-zh`                       | [chinese-status-messages.md](./docs/chinese-status-messages.md)   |
-| Hindi       | `messages-hi`                       | [hindi-status-messages.md](./docs/hindi-status-messages.md)       |
-| Arabic      | `messages-ar`                       | [arabic-status-messages.md](./docs/arabic-status-messages.md)     |
-| German      | `messages-de`                       | [german-status-messages.md](./docs/german-status-messages.md)     |
-| French      | `messages-fr`                       | [french-status-messages.md](./docs/french-status-messages.md)     |
-| Italian     | `messages-it`                       | [italian-status-messages.md](./docs/italian-status-messages.md)   |
-| Spanish     | `messages-es`                       | [spanish-status-messages.md](./docs/spanish-status-messages.md)   |
-| Japanese    | `messages-ja`                       | [japanese-status-messages.md](./docs/japanese-status-messages.md) |
-| Russian     | `messages-ru`                       | [russian-status-messages.md](./docs/russian-status-messages.md)   |
-
----
-
 ## What’s included?
 
-- `StatusCodes`: constants for all HTTP status codes  
-- `StatusMessages`: short messages for each code (English default)  
-- `DetailedStatusMessages`: longer, more detailed English messages  
-- `getStatusMessage(code, options?)`: returns the message for a status code; optionally pass a `{ variant }` to get localized or detailed messages  
+- `StatusCodes`: constants for all HTTP status codes
+- `StatusMessages`: short messages for each code
+- `DetailedStatusMessages`: longer, more detailed messages
+- `getStatusMessage(code, 'detailed'?)`: returns either a short or detailed message for a given status code
 
-> **Note:**  
-> `getStatusMessage` returns the HTTP reason phrase for a status code.  
+> **Note:** The function `getStatusMessage` returns the HTTP reason phrase for a status code.  
+> We chose the name `getStatusMessage` to keep it simple and clear.  
 > You can also use the alias `getReasonPhrase`, which behaves the same way.
-
----
 
 ## Common HTTP Status Codes
 
@@ -123,12 +96,12 @@ You can import message variants for different languages:
 🔗 **[See full list of status codes](./docs/status-codes-with-short-message.md)**  
 🔗 **[See status codes with detailed messages](./docs/status-codes-with-detailed-message.md)**
 
----
-
 ## TypeScript & Module Support
 
-- ✅ Full TypeScript support with type safety and autocompletion  
+- ✅ Full TypeScript support with type safety and autocompletion
 - ✅ Works in both ESM and CommonJS environments
+
+Works in ESM and CommonJS
 
 ```ts
 // ESM
@@ -138,24 +111,18 @@ import { StatusCodes } from 'http-status-toolkit';
 const { StatusCodes } = require('http-status-toolkit');
 ```
 
----
-
 ## License
 
 MIT License. See the LICENSE file.
-
----
 
 ## Contributions
 
 Feel free to suggest improvements or add new status codes by opening issues or pull requests on GitHub.
 
----
-
 ## Links
 
-- **GitHub:** [https://github.com/dev-rashedin/http-status-toolkit](https://github.com/dev-rashedin/http-status-toolkit)  
-- **Portfolio:** [https://www.rashedin.dev](https://www.rashedin.dev)
+- **GitHub:** [Rashedin-063](https://github.com/dev-rashedin)
+- **Portfolio:** [rashedin.dev](https://www.rashedin.dev)
 
 ---
 
