@@ -44,6 +44,12 @@ npm install http-status-toolkit
 yarn add http-status-toolkit
 ```
 
+## Using pnpm
+
+```bash
+pnpm add http-status-toolkit
+```
+
 ## TypeScript & Module Support
 
 - ✅ Full TypeScript support with type safety and autocompletion  
@@ -128,6 +134,16 @@ You can import message variants for different languages:
 | Spanish     | `messages-es`                       | [spanish-status-messages.md](./docs/spanish-status-messages.md)   |
 | Japanese    | `messages-ja`                       | [japanese-status-messages.md](./docs/japanese-status-messages.md) |
 | Russian     | `messages-ru`                       | [russian-status-messages.md](./docs/russian-status-messages.md)   |
+
+---
+
+## Contributors
+
+Thanks to everyone who has contributed to this project! Special thanks to:
+
+- [Rocky Haque](https://github.com/rockyhaque) — for their valuable pull request(s)
+
+Contributions of any kind are always welcome. Feel free to open issues or submit PRs!
 
 ---
 
