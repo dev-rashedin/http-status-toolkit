@@ -1,6 +1,6 @@
 // Russian translations of detailed HTTP status messages
 
-export const RussianStatusMessages = {
+const RussianStatusMessages = {
   // --- 1xx: Информационные ---
   100: 'Продолжать. Запрос получен, продолжайте отправку остальной части.',
   101: 'Смена протокола. Переключение протокола по запросу клиента.',
@@ -101,6 +101,9 @@ export const RussianStatusMessages = {
   526: 'Невалидный SSL-сертификат.',
   527: 'Ошибка Railgun.',
 } as const;
+
+
+export default RussianStatusMessages;
 
 export type RussianStatusMessage =
   (typeof RussianStatusMessages)[keyof typeof RussianStatusMessages];

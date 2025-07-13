@@ -1,4 +1,6 @@
-export const JapaneseStatusMessages = {
+// Japanese translations of detailed HTTP status messages
+
+const JapaneseStatusMessages = {
   // --- 1xx: Informational ---
   100: '続行。リクエストを受け取りました。残りを送信してください。',
   101: 'プロトコルの切り替え。クライアントの要求により切り替えます。',
@@ -99,6 +101,8 @@ export const JapaneseStatusMessages = {
   526: 'SSL証明書が無効です。',
   527: 'Railgunエラー。WAN接続後に失敗しました。',
 } as const;
+
+export default JapaneseStatusMessages;
 
 export type JapaneseStatusMessage =
   (typeof JapaneseStatusMessages)[keyof typeof JapaneseStatusMessages];

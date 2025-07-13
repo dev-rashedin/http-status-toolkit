@@ -1,7 +1,7 @@
 
 // generate detailed status message if required
 
-export const DetailedStatusMessages = {
+const DetailedStatusMessages = {
   // --- 1xx: Informational ---
   100: 'Continue. Request received, continue to send the rest of the request.',
   101: 'Switching Protocols. Protocol switch initiated as requested by the client.',
@@ -104,5 +104,10 @@ export const DetailedStatusMessages = {
 } as const;
 
 
+export default DetailedStatusMessages;
+
 export type DetailedStatusMessage =
   (typeof DetailedStatusMessages)[keyof typeof DetailedStatusMessages];
+
+
+

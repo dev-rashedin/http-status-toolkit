@@ -1,6 +1,6 @@
 // Traduzioni dettagliate dei messaggi di stato HTTP in italiano
 
-export const ItalianStatusMessages = {
+const ItalianStatusMessages = {
   // --- 1xx: Informativo ---
   100: 'Continua. Richiesta ricevuta, continua a inviare il resto.',
   101: 'Cambio di protocollo. Cambio avviato come richiesto dal client.',
@@ -101,6 +101,8 @@ export const ItalianStatusMessages = {
   526: 'Certificato SSL non valido.',
   527: 'Errore Railgun.',
 } as const;
+
+export default ItalianStatusMessages;
 
 export type ItalianStatusMessage =
   (typeof ItalianStatusMessages)[keyof typeof ItalianStatusMessages];

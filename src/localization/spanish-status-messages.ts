@@ -1,6 +1,6 @@
 // 📁 src/localization/spanish-status-messages.ts
 
-export const SpanishStatusMessages = {
+const SpanishStatusMessages = {
   // --- 1xx: Informativo ---
   100: 'Continuar. Solicitud recibida, continúe enviando el resto de la solicitud.',
   101: 'Cambiando protocolos. Cambio de protocolo iniciado según lo solicitado por el cliente.',
@@ -102,5 +102,9 @@ export const SpanishStatusMessages = {
   527: 'Error Railgun. Falla después de establecer conexión WAN.',
 } as const;
 
+export default SpanishStatusMessages;
+
 export type SpanishStatusMessage =
   (typeof SpanishStatusMessages)[keyof typeof SpanishStatusMessages];
+
+
