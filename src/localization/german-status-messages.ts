@@ -1,6 +1,6 @@
 // German translations of detailed HTTP status messages
 
-export const GermanStatusMessages = {
+const GermanStatusMessages = {
   // --- 1xx: Informational ---
   100: 'Weiter. Anfrage erhalten, sende den Rest fort.',
   101: 'Protokollwechsel. Protokollwechsel eingeleitet wie vom Client angefordert.',
@@ -101,6 +101,8 @@ export const GermanStatusMessages = {
   526: 'Ungültiges SSL-Zertifikat.',
   527: 'Railgun-Fehler.',
 } as const;
+
+export default GermanStatusMessages;
 
 export type GermanStatusMessage =
   (typeof GermanStatusMessages)[keyof typeof GermanStatusMessages];

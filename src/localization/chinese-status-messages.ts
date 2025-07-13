@@ -1,6 +1,6 @@
-// 📁 src/chineseStatusMessages.ts
+// Chinese translations of detailed HTTP status messages
 
-export const ChineseStatusMessages = {
+const ChineseStatusMessages = {
   // --- 1xx: 信息 ---
   100: '继续。服务器已接收请求的初始部分，继续发送剩余部分。',
   101: '切换协议。服务器同意更改协议。',
@@ -101,6 +101,8 @@ export const ChineseStatusMessages = {
   526: '无效的SSL证书。',
   527: 'Railgun错误。WAN连接后失败。',
 } as const;
+
+export default ChineseStatusMessages;
 
 export type ChineseStatusMessage =
   (typeof ChineseStatusMessages)[keyof typeof ChineseStatusMessages];

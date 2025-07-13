@@ -1,4 +1,4 @@
-// 📁 src/localization/spanish-status-messages.ts
+// Spanish translations of detailed HTTP status messages
 
 const SpanishStatusMessages = {
   // --- 1xx: Informativo ---
@@ -106,5 +106,3 @@ export default SpanishStatusMessages;
 
 export type SpanishStatusMessage =
   (typeof SpanishStatusMessages)[keyof typeof SpanishStatusMessages];
-
-

@@ -1,6 +1,6 @@
 // French translations of detailed HTTP status messages
 
-export const FrenchStatusMessages = {
+const FrenchStatusMessages = {
   // --- 1xx: Informational ---
   100: "Continuer. Requête reçue, continuer à envoyer le reste.",
   101: "Changement de protocoles. Changement initié comme demandé par le client.",
@@ -101,6 +101,8 @@ export const FrenchStatusMessages = {
   526: "Certificat SSL invalide.",
   527: "Erreur Railgun.",
 } as const;
+
+export default FrenchStatusMessages;
 
 export type FrenchStatusMessage =
   (typeof FrenchStatusMessages)[keyof typeof FrenchStatusMessages];

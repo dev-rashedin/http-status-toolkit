@@ -102,7 +102,6 @@ const RussianStatusMessages = {
   527: 'Ошибка Railgun.',
 } as const;
 
-
 export default RussianStatusMessages;
 
 export type RussianStatusMessage =

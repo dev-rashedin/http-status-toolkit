@@ -1,6 +1,6 @@
-// 📁 src/arabicStatusMessages.ts
+// Arabic translations of detailed HTTP status messages
 
-export const ArabicStatusMessages = {
+const ArabicStatusMessages = {
   // --- 1xx: معلومات ---
   100: 'استمر. تم استلام الطلب، الرجاء إرسال الجزء المتبقي.',
   101: 'تبديل البروتوكول. البروتوكول يتم تغييره بناءً على طلب العميل.',
@@ -101,6 +101,8 @@ export const ArabicStatusMessages = {
   526: 'شهادة SSL غير صالحة.',
   527: 'خطأ Railgun.',
 } as const;
+
+export default ArabicStatusMessages;
 
 export type ArabicStatusMessage =
   (typeof ArabicStatusMessages)[keyof typeof ArabicStatusMessages];

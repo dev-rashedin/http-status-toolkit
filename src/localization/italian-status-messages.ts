@@ -1,4 +1,4 @@
-// Traduzioni dettagliate dei messaggi di stato HTTP in italiano
+// Italian translations of detailed HTTP status messages
 
 const ItalianStatusMessages = {
   // --- 1xx: Informativo ---

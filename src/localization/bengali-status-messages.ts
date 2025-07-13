@@ -1,6 +1,6 @@
-// 📁 src/bengaliStatusMessages.ts
+// Bengali translations of detailed HTTP status messages
 
-export const BengaliStatusMessages = {
+const BengaliStatusMessages = {
   // --- 1xx: তথ্যমূলক ---
   100: 'চালিয়ে যান। অনুরোধ গ্রহণ করা হয়েছে, বাকি অংশ পাঠান।',
   101: 'প্রোটোকল পরিবর্তন। ক্লায়েন্টের অনুরোধে প্রোটোকল পরিবর্তন হচ্ছে।',
@@ -102,6 +102,7 @@ export const BengaliStatusMessages = {
   527: 'রেলগান ত্রুটি। WAN সংযোগের পর ব্যর্থতা ঘটেছে।',
 } as const;
 
+export default BengaliStatusMessages;
+
 export type BengaliStatusMessage =
   (typeof BengaliStatusMessages)[keyof typeof BengaliStatusMessages];
-

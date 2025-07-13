@@ -1,4 +1,3 @@
-
 // generate detailed status message if required
 
 const DetailedStatusMessages = {

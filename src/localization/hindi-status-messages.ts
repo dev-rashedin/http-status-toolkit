@@ -1,6 +1,6 @@
-// 📁 src/hindiStatusMessages.ts
+// Hindi translations of detailed HTTP status messages
 
-export const HindiStatusMessages = {
+const HindiStatusMessages = {
   // --- 1xx: सूचना ---
   100: 'जारी रखें। अनुरोध प्राप्त हो गया है, बाकी भेजें।',
   101: 'प्रोटोकॉल स्विच। क्लाइंट के अनुरोध पर प्रोटोकॉल बदला जा रहा है।',
@@ -101,6 +101,8 @@ export const HindiStatusMessages = {
   526: 'अवैध SSL प्रमाणपत्र।',
   527: 'Railgun त्रुटि।',
 } as const;
+
+export default HindiStatusMessages;
 
 export type HindiStatusMessage =
   (typeof HindiStatusMessages)[keyof typeof HindiStatusMessages];
