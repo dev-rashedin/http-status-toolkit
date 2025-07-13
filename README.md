@@ -4,8 +4,10 @@
 ![typescript](https://badgen.net/badge/icon/typescript?icon=typescript&label)
 [![license](https://img.shields.io/npm/l/http-status-toolkit)](https://github.com/dev-rashedin/http-status-toolkit/blob/main/LICENSE)
 [![downloads](https://img.shields.io/npm/dm/http-status-toolkit)](https://www.npmjs.com/package/http-status-toolkit)
-![minified](https://badgen.net/bundlephobia/min/http-status-toolkit)
-![minified gzip](https://badgen.net/bundlephobia/minzip/http-status-toolkit)
+<!-- ![minified](https://badgen.net/bundlephobia/min/http-status-toolkit)
+![minified gzip](https://badgen.net/bundlephobia/minzip/http-status-toolkit) -->
+![bundle size](https://deno.bundlejs.com/badge?q=http-status-toolkit)
+
 
 👉 [View on npm](https://www.npmjs.com/package/http-status-toolkit)
 
@@ -73,7 +75,7 @@ console.log(getStatusMessage(StatusCodes.NOT_FOUND));
 // Output: "Not Found"
 
 // Get a detailed message (import detailed messages and pass variant)
-import {DetailedMessages} from 'http-status-toolkit/messages-detailed';
+import DetailedMessages from 'http-status-toolkit/messages-detailed';
 console.log(getStatusMessage(StatusCodes.NOT_FOUND, { variant: DetailedMessages }));
 // Output: "Not Found: The requested resource could not be found but may be available in the future."
 
