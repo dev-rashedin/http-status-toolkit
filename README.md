@@ -73,7 +73,7 @@ console.log(getStatusMessage(StatusCodes.NOT_FOUND));
 // Output: "Not Found"
 
 // Get a detailed message (import detailed messages and pass variant)
-import DetailedMessages from 'http-status-toolkit/messages-detailed';
+import {DetailedMessages} from 'http-status-toolkit/messages-detailed';
 console.log(getStatusMessage(StatusCodes.NOT_FOUND, { variant: DetailedMessages }));
 // Output: "Not Found: The requested resource could not be found but may be available in the future."
 

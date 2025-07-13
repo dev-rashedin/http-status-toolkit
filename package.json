@@ -1,6 +1,6 @@
 {
-  "name": "http-status-toolkit-beta",
-  "version": "1.0.3",
+  "name": "http-status-toolkit",
+  "version": "2.0.0",
   "description": "A lightweight and developer-friendly toolkit for working with HTTP status codes and messages in Node.js and TypeScript.",
   "author": "Rashedin Islam <rashedinislam.06@gmail.com>",
   "license": "MIT",
